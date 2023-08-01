@@ -1,8 +1,50 @@
-//Question1_
+//Question1_Destructure the countries object print name, capital, population and languages of all countries
 
-//Question1_Destructure and assign the elements of constants array to e, pi, gravity, humanBodyTemp, waterBoilingTemp.
+const users = [
+    {
+      name:'Brook',
+      scores:75,
+      skills:['HTM', 'CSS', 'JS'],
+      age:16
+    },
+    {
+      name:'Alex',
+      scores:80,
+      skills:['HTM', 'CSS', 'JS'],
+      age:18
+    },
+    {
+      name:'David',
+      scores:75,
+      skills:['HTM', 'CSS'],
+      age:22
+    },
+    {
+      name:'John',
+      scores:85,
+      skills:['HTML'],
+      age:25
+    },
+    {
+      name:'Sara',
+      scores:95,
+      skills:['HTM', 'CSS', 'JS'],
+      age: 26
+    },
+    {
+      name:'Martha',
+      scores:80,
+      skills:['HTM', 'CSS', 'JS'],
+      age:18
+    },
+    {
+      name:'Thomas',
+      scores:90,
+      skills:['HTM', 'CSS', 'JS'],
+      age:20
+    }
+    ]
+    for (const {name, scores, skills, age} of users){
+        console.log(name, scores, skills, age)
+      }
 
-const constants = [2.72, 3.14, 9.81, 37, 100]
-let [e, pi, gravity, bodyTemp, boilingTemp] = constants
-
-console.log(e, pi, gravity, bodyTemp, boilingTemp);
